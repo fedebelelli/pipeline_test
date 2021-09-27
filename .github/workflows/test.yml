@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: fede3535/pipeline_test:latest
+          tags: fede3535/pipeline_test
 
   deploy:
     name: deploy to cluster
