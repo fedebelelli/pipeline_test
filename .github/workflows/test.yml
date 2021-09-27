@@ -38,7 +38,7 @@ jobs:
       uses: steebchen/kubectl@v2.0.0
       with: # defaults to latest kubectl binary version
         config: ${{ secrets.KUBE_CONFIG_DATA }}
-        command: set image --record deployment/myapp container=fede3535/pipeline_test:latest
+        command: set image --record deployment/myapp fede3535/pipeline_test:latest
     - name: verify deployment
       uses: steebchen/kubectl@v2.0.0
       with:
